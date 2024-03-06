@@ -1,2 +1,4 @@
 <h1><%= @machine.location %> Vending Machine</h1>
-<%=@machine.owner.name%>
+<%@machine.snacks.each do |snack|%>
+  <p><%=snack.name%>: <%=snack.price%></p>
+<% end %>
