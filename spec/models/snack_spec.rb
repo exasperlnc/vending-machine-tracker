@@ -6,7 +6,7 @@ RSpec.describe Snack, type: :model do
   end
   
   describe "relationships" do
-    it {should have_many(:machines)}
+    it {should have_many(:snack_machines)}
   end
 
   it 'exists' do
